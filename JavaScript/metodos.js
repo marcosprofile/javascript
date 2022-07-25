@@ -1,4 +1,21 @@
-let marca = 'Nike'
+const cachorro = {
+    raca: '',
+    uivar: function() {
+        console.log('Auuuuuuuu')
+    },
+    rosnar: function() {
+        console.log('grrrrr')
+    },
+    setRaca: function(raca) {
+        this.raca = raca
+    },
+    getRaca: function() {
+        return 'A raça é ' + this.raca
+    }
+}
 
-console.log(typeof marca.toUpperCase)
-console.log(marca.toUpperCase())
+cachorro.uivar()
+cachorro.rosnar()
+
+cachorro.setRaca('Shitzu')
+console.log(cachorro.getRaca())
