@@ -90,3 +90,74 @@ function verificarElementos(arr) {
 }
 
 verificarElementos(frutas6)
+
+/*
+* Exercício 7
+* Crie um array com 5 elementos;
+* Faça uma iteração entre todos eles e imprima no console;
+*/
+
+let arr5 = ['Pedro', 'João', 'Maria', 'Marcos', 'Henrique']
+
+for(let i = 0; i < arr5.length; i++) {
+    console.log(arr5[i])
+}
+
+/*
+* Exercício 8
+* Crie um JSON com 3 propriedades;
+* Atribua ele a uma variável;
+* Acesse as propriedades imprimindo no console
+*/
+
+const json = {
+    "nome": "Marcos",
+    "idade": 25,
+    "cargo": "programador"
+}
+
+console.log(json.nome)
+console.log(json.idade)
+console.log(json.cargo)
+
+/*
+* Exercício 9
+* Crie um array a partir de uma frase;
+* Imprima cada palavra do array no console por meio de um for
+*/
+
+let frase = 'Meu nome é Marcos'
+
+let arrFrase = frase.split(' ')
+
+for(let i = 0; i < arrFrase.length; i++) {
+    console.log(arrFrase[i])
+}
+
+/*
+* Exercício 10
+* Crie um objeto calculadora;
+* Que tem os seguintes métodos: somar, subtrair, multiplicar e dividir;
+* os métodos só devem aceitar dois parâmetros;
+* Utilize cada um dos métodos e imprima os valores no console
+*/
+
+const calculadora = {
+    soma: function(a, b) {
+        return a + b
+    },
+    subtrair: function(a, b) {
+        return a - b
+    },
+    multiplicar: function(a, b) {
+        return a * b
+    },
+    dividir: function(a, b) {
+        return a / b
+    }
+}
+
+console.log(calculadora.soma(10,10))
+console.log(calculadora.subtrair(10,10))
+console.log(calculadora.multiplicar(10,10))
+console.log(calculadora.dividir(10,10))
