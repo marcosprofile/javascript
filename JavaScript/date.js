@@ -1,3 +1,26 @@
+const data = new Date()
+const dataAtual = formataData(data)
+const diaSemana = data.getDay()
+let diaSemanaTexto
+
+if(diaSemana === 0) {
+    diaSemanaTexto = 'Dom'
+} else if(diaSemana === 1) {
+    diaSemanaTexto = 'Seg'
+} else if(diaSemana === 2) {
+    diaSemanaTexto = 'Ter'
+} else if(diaSemana === 3) {
+    diaSemanaTexto = 'Qua'
+} else if(diaSemana === 4) {
+    diaSemanaTexto = 'Qui'
+} else if(diaSemana === 5) {
+    diaSemanaTexto = 'Sex'
+} else if(diaSemana === 6) {
+    diaSemanaTexto = 'Sáb'
+} else {
+    diaSemanaTexto = ''
+}
+
 function formataData(data) {
 
     function zeroAEsquerda(num) {
@@ -13,9 +36,6 @@ function formataData(data) {
     
     return `${dia}/${mes}/${ano} ${hora}:${min}:${seg}`
 }
-
-const data = new Date()
-const dataAtual = formataData(data)
 
 console.log(dataAtual)
 console.log(data.toString())
