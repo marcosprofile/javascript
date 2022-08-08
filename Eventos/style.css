@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    align-content: center;
+}
+
+div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 15px;
+}
+
+button {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 8px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ff0;
+    padding: 10px 50px;
+    border-radius: 8px;
+}
+
+a:hover {
+    background-color: #e2e200;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btn1 {
+    background-color: #00e08a;
+}
+
+#btn2 {
+    background-color: #ff0062;
+}
+
+#btn3 {
+    background-color: #d400ff;
+}
+
+#btn1:hover {
+    cursor: pointer;
+    background-color: #00c076;
+    transition: all 0.3s ease;
+}
+
+#btn2:hover {
+    cursor: pointer;
+    background-color: #dd0055;
+    transition: all 0.3s ease;
+}
+
+#btn3:hover {
+    cursor: pointer;
+    background-color: #b700db;
+    transition: all 0.3s ease;
+}
