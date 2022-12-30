@@ -17,7 +17,7 @@ alunos.splice(0, 2, "Thiago");
 //Thiago(0), Caio(1), Lara(2), Marjorie(3), Leo(4)
 
 
-//remove 2 elemento a partir do índice 1 e insere Fernando
+//remove 2 elementos a partir do índice 1 e insere Fernando
 alunos.splice(1, 2, "Fernando");
 //Thiago(0), Fernando(1), Marjorie(2), Leo(3)
 
